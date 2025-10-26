@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
+import AdsSection from './components/AdsSection';
 
 const App = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <HeroSection />
+      <AdsSection />
       <main className="w-full">
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-green-50">
           <div className="text-center px-4 max-w-4xl mx-auto">
@@ -18,8 +20,8 @@ const App = () => {
             </p>
             <div className="text-sm text-gray-500 bg-white p-4 rounded-lg shadow-sm">
               <p>✅ Responsive double-decker navbar</p>
-              <p>✅ Hero section with background image</p>
-              <p>✅ Proper color scheme and styling</p>
+              <p>✅ Hero section with search functionality</p>
+              <p>✅ Ads section with demo content</p>
             </div>
           </div>
         </div>
