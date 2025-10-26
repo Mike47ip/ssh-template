@@ -8,7 +8,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full bg-gray-900 sticky top-0 z-50">
+    <header className="w-full sticky top-0 z-50" style={{ backgroundColor: '#0F0F0F' }}>
       {/* Top Row */}
       <div className="w-full px-4 lg:px-6 border-b border-gray-700">
         <div className="flex justify-between items-center h-24">
@@ -19,7 +19,7 @@ const Navbar = () => {
             <img 
               src="/images/ssh-logo.png.png" 
               alt="Study Sustainability Hub Logo" 
-              className="h-16 h-28 h-36 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 
