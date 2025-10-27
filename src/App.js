@@ -6,6 +6,7 @@ import DisciplineSection from './components/DisciplineSection';
 import FeaturedInstitutions from './components/FeaturedInstitutions';
 import FeaturedCourses from './components/FeaturedCourses';
 import FAQ from './components/FAQ';
+import Testimonials from './components/Testimonials';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <FeaturedInstitutions />
       <FeaturedCourses />
       <FAQ />
+      <Testimonials />
       <main className="w-full">
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-green-50">
           <div className="text-center px-4 max-w-4xl mx-auto">
