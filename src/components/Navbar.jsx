@@ -19,7 +19,7 @@ const Navbar = () => {
             <img 
               src="/images/ssh-logo.png.png" 
               alt="Study Sustainability Hub Logo" 
-              className="h-16 w-auto"
+              className=" h-36 w-auto"
             />
           </div>
 
