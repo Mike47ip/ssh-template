@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3 flex-shrink-0">
             {/* Logo Image */}
             <img 
-              src="/images/ssh-logo.png.png" 
+              src="/images/ssh-logo.png" 
               alt="Study Sustainability Hub Logo" 
               className=" h-36 w-auto"
             />
