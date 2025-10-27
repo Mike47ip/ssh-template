@@ -48,133 +48,133 @@ const SearchSection = () => {
       </div>
 
       {/* Filter Dropdowns */}
-      <div className="rounded-lg p-4" style={{ backgroundColor: '#0F0F0F' }}>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+      <div className="rounded-lg p-3 border border-gray-700" style={{ backgroundColor: '#0F0F0F' }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
           
           {/* Discipline */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
+          <div className="flex items-center space-x-2 p-2 rounded-md border border-gray-600 hover:border-gray-500 transition-colors">
+            <div className="w-5 h-5 bg-gray-600 rounded flex items-center justify-center flex-shrink-0">
               <span className="text-white text-xs">📚</span>
             </div>
             <select
               value={filters.discipline}
               onChange={(e) => handleFilterChange('discipline', e.target.value)}
-              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer"
+              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer min-w-0"
             >
               <option value="" className="bg-gray-800">Discipline</option>
               <option value="environmental" className="bg-gray-800">Environmental Science</option>
               <option value="renewable" className="bg-gray-800">Renewable Energy</option>
               <option value="sustainability" className="bg-gray-800">Sustainability Studies</option>
             </select>
-            <span className="text-gray-400">▼</span>
+            <span className="text-gray-400 text-xs">▼</span>
           </div>
 
           {/* Study Type */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
+          <div className="flex items-center space-x-2 p-2 rounded-md border border-gray-600 hover:border-gray-500 transition-colors">
+            <div className="w-5 h-5 bg-gray-600 rounded flex items-center justify-center flex-shrink-0">
               <span className="text-white text-xs">📖</span>
             </div>
             <select
               value={filters.studyType}
               onChange={(e) => handleFilterChange('studyType', e.target.value)}
-              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer"
+              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer min-w-0"
             >
               <option value="" className="bg-gray-800">Study Type</option>
               <option value="fulltime" className="bg-gray-800">Full Time</option>
               <option value="parttime" className="bg-gray-800">Part Time</option>
               <option value="online" className="bg-gray-800">Online</option>
             </select>
-            <span className="text-gray-400">▼</span>
+            <span className="text-gray-400 text-xs">▼</span>
           </div>
 
           {/* Qualification */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
+          <div className="flex items-center space-x-2 p-2 rounded-md border border-gray-600 hover:border-gray-500 transition-colors">
+            <div className="w-5 h-5 bg-gray-600 rounded flex items-center justify-center flex-shrink-0">
               <span className="text-white text-xs">🎓</span>
             </div>
             <select
               value={filters.qualification}
               onChange={(e) => handleFilterChange('qualification', e.target.value)}
-              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer"
+              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer min-w-0"
             >
               <option value="" className="bg-gray-800">Qualification</option>
               <option value="bachelor" className="bg-gray-800">Bachelor's</option>
               <option value="master" className="bg-gray-800">Master's</option>
               <option value="phd" className="bg-gray-800">PhD</option>
             </select>
-            <span className="text-gray-400">▼</span>
+            <span className="text-gray-400 text-xs">▼</span>
           </div>
 
           {/* Institution */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
+          <div className="flex items-center space-x-2 p-2 rounded-md border border-gray-600 hover:border-gray-500 transition-colors">
+            <div className="w-5 h-5 bg-gray-600 rounded flex items-center justify-center flex-shrink-0">
               <span className="text-white text-xs">🏛️</span>
             </div>
             <select
               value={filters.institution}
               onChange={(e) => handleFilterChange('institution', e.target.value)}
-              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer"
+              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer min-w-0"
             >
               <option value="" className="bg-gray-800">Institution</option>
               <option value="harvard" className="bg-gray-800">Harvard University</option>
               <option value="mit" className="bg-gray-800">MIT</option>
               <option value="stanford" className="bg-gray-800">Stanford</option>
             </select>
-            <span className="text-gray-400">▼</span>
+            <span className="text-gray-400 text-xs">▼</span>
           </div>
 
           {/* Location */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
+          <div className="flex items-center space-x-2 p-2 rounded-md border border-gray-600 hover:border-gray-500 transition-colors">
+            <div className="w-5 h-5 bg-gray-600 rounded flex items-center justify-center flex-shrink-0">
               <span className="text-white text-xs">📍</span>
             </div>
             <select
               value={filters.location}
               onChange={(e) => handleFilterChange('location', e.target.value)}
-              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer"
+              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer min-w-0"
             >
               <option value="" className="bg-gray-800">Location</option>
               <option value="usa" className="bg-gray-800">United States</option>
               <option value="uk" className="bg-gray-800">United Kingdom</option>
               <option value="canada" className="bg-gray-800">Canada</option>
             </select>
-            <span className="text-gray-400">▼</span>
+            <span className="text-gray-400 text-xs">▼</span>
           </div>
 
           {/* Start Term */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
+          <div className="flex items-center space-x-2 p-2 rounded-md border border-gray-600 hover:border-gray-500 transition-colors">
+            <div className="w-5 h-5 bg-gray-600 rounded flex items-center justify-center flex-shrink-0">
               <span className="text-white text-xs">📅</span>
             </div>
             <select
               value={filters.startTerm}
               onChange={(e) => handleFilterChange('startTerm', e.target.value)}
-              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer"
+              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer min-w-0"
             >
               <option value="" className="bg-gray-800">Start Term</option>
               <option value="fall2024" className="bg-gray-800">Fall 2024</option>
               <option value="spring2025" className="bg-gray-800">Spring 2025</option>
               <option value="summer2025" className="bg-gray-800">Summer 2025</option>
             </select>
-            <span className="text-gray-400">▼</span>
+            <span className="text-gray-400 text-xs">▼</span>
           </div>
 
           {/* Delivery */}
-          <div className="flex items-center space-x-2">
-            <div className="w-6 h-6 bg-gray-600 rounded flex items-center justify-center">
+          <div className="flex items-center space-x-2 p-2 rounded-md border border-gray-600 hover:border-gray-500 transition-colors">
+            <div className="w-5 h-5 bg-gray-600 rounded flex items-center justify-center flex-shrink-0">
               <span className="text-white text-xs">🚚</span>
             </div>
             <select
               value={filters.delivery}
               onChange={(e) => handleFilterChange('delivery', e.target.value)}
-              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer"
+              className="bg-transparent text-white text-sm flex-1 focus:outline-none cursor-pointer min-w-0"
             >
               <option value="" className="bg-gray-800">Delivery</option>
               <option value="campus" className="bg-gray-800">On Campus</option>
               <option value="online" className="bg-gray-800">Online</option>
               <option value="hybrid" className="bg-gray-800">Hybrid</option>
             </select>
-            <span className="text-gray-400">▼</span>
+            <span className="text-gray-400 text-xs">▼</span>
           </div>
 
         </div>
